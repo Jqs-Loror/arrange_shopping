@@ -48,3 +48,17 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'rvm-capistrano'
+
+
+group :development do
+  gem 'capistrano', '2.15.5'
+  gem 'capistrano-unicorn', :require => false
+  gem 'thin'
+end
+
+group :production do
+	gem 'puma'
+end
+
